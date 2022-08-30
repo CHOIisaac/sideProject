@@ -21,8 +21,10 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
-	<!--view-controller path="/register/add" view-name="registerForm"/-->	
-	<context:component-scan base-package="com.fastcampus.ch2" />
+	<!--view-controller path="/register/add" view-name="registerForm"/-->
+	<context:component-scan base-package="com.fastcampus.ch2">
+		<context:exclude-filter type="regex" expression="com.fastcampus.ch2.diCopy*.*"/>
+	</context:component-scan>
 	
 	<beans:bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
 		<beans:property name="defaultErrorView" value="error"/>
