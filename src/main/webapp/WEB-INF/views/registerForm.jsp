@@ -69,7 +69,7 @@
     <title>Register</title>
 </head>
 <body>
-   <form action="<c:url value="/register/save"/>" method="POST" onsubmit="return formCheck(this)">
+   <form action="<c:url value="/register/add"/>" method="POST" onsubmit="return formCheck(this)">
     <div class="title">Register</div>
     <div id="msg" class="msg"> ${URLDecoder.decode(param.msg, "utf-8")}</div>  
     <label for="">아이디</label>

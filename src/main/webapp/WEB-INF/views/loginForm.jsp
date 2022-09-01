@@ -52,7 +52,7 @@
             height: 30px;
             text-align:center;
             font-size:16px;
-            color:red;
+            color: #ff0000;
             margin-bottom: 20px;
         }
     </style>
